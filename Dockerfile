@@ -3,10 +3,10 @@ FROM alpine:3.19
 RUN apk add --no-cache \
     bash \
     jq \
-    py3-pip \
     curl \
     git \
-    python \
+    python3 \
+    py3-pip 
 
 RUN pip3 install awscli
 
