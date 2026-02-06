@@ -6,9 +6,8 @@ RUN apk add --no-cache \
     curl \
     git \
     python3 \
+    awscli \
     py3-pip 
-
-RUN pip3 install awscli
 
 RUN add user -D devops
 USER devops
